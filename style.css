@@ -124,7 +124,7 @@ body {
     box-sizing: border-box;
     height: 82px;
     border-radius: 15px;
-    transition: all 0.3 ease;
+
 }
 
 .btn-primary {
@@ -148,5 +148,239 @@ body {
     background-image: url('photo/IMG_20251017_210105.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
+    border-radius: 25px;
+}
+
+.about {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #F9F4F0;
+}
+
+.about h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 68px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end; 
+}
+
+/* Левая часть */
+.about-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.first-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: 260px;
+}
+
+.main-image {
+    width: 350px;
+    height: 260px;
+    background-image: url('photo/IMG_20251018_143018.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    flex-shrink: 0;
+}
+
+.text-block-large {
+    flex: 1;
+    background-image: url('photo/Без\ названия1_20251018145246.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    height: 260px;
+}
+
+
+.second-row {
+    display: flex;
+    gap: 20px;
+    height: 148px;
+    align-items: flex-end; 
+}
+
+
+.text-block-medium, .text-block-small {
+    background-color: #EFE9E3;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.text-block-medium {
+    width: 420px;
+    height: 120px; 
+}
+
+.text-block-medium p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0;
+    width: 336px;
+}
+
+.text-block-small {
+    width: 300px;
+    height: 120px; 
+}
+
+.text-block-small p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0;
+    width: 226px;
+}
+
+
+.small-image {
+    width: 190px;
+    height: 140px; 
+    background-image: url('photo/IMG_20251018_145846.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    flex-shrink: 0;
+}
+
+.side-image {
+    width: 370px;
+    height: 428px;
+    background-image: url('photo/IMG_20251018_143418.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    flex-shrink: 0;
+}
+
+
+.puppies-full-section {
+    width: 100%;
+    height: 839px;
+    background-color: #F9F4F0;
+}
+
+
+.breeds-filter {
+    width: 100%;
+    background-color: #F9F4F0;
+    display: flex;
+    justify-content: center;
+    padding: 170px 0 0 0; 
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 20px;
+    height: 74px;
+    align-items: center;
+}
+
+.filter-btn {
+    height: 74px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #396448;
+    border: 1px solid #396448;
+}
+
+.filter-btn.active {
+    background-color: #396448;
+    color: white;
+    border: none;
+}
+
+.filter-btn:nth-child(1) { width: 181px; }
+.filter-btn:nth-child(2) { width: 139px; }
+.filter-btn:nth-child(3) { width: 120px; }
+.filter-btn:nth-child(4) { width: 248px; }
+
+
+.puppies-section {
+    width: 100%;
+    height: 774px;
+    background-color: #396448;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0; 
+}
+
+.puppies-container {
+    text-align: center;
+    max-width: 1341px;
+    width: 100%;
+}
+
+.puppies-container h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 68px;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.puppies-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+    height: 370px;
+}
+
+.puppy-item {
+    flex: 1;
+    height: 100%;
+}
+
+.puppy-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 27px;
+}
+
+.show-all-btn {
+    width: 300px;
+    height: 82px;
+    border-radius: 10px;
+    background-color: white;
+    color: #396448;
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
