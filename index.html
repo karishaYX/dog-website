@@ -151,51 +151,106 @@
     </div>
 </section>
       <section>
-    <div class="breed-buttons">
-        <button>Шарпей</button>
-        <button>Сиба-Ину</button>
-        <button>Корги</button>
-        <button>Померанский Шпиц</button>
-    </div>
-
-    <h2>О ПОРОДЕ</h2>
-
-    <div class="breed-content">
-        <div class="breed-image">
-            <img src="" alt="фото породы">
+<section class="breeds-choice-section">
+    <div class="breeds-choice-filter">
+        <div class="choice-filter-container">
+            <div class="choice-filter-buttons">
+                <button class="choice-filter-btn active">Шарпей</button>
+                <button class="choice-filter-btn">Сиба-ину</button>
+                <button class="choice-filter-btn">Корги</button>
+                <button class="choice-filter-btn">Померанский шпиц</button>
+            </div>
         </div>
+    </div>
+    
+    <div class="breeds-choice-content">
+        <div class="breed-about-container">
+            <h2>О ПОРОДЕ</h2>
+            
+            <div class="breed-content">
+                <div class="breed-image"></div>
 
-        <div class="breed-info">
-            <div class="info-block">
-                <h3>Внешность</h3>
-                <p>уникально выделяется среди пород с грушевидной головой, морщинистым лицом и ушами-раковинами. Отличается сине-чёрным языком, крепким телосложением и мускулистыми ногами. Шарпей украшают широкая грудь, гибкая спина и кольцеобразный хвост, а его жесткая шерсть подчеркивает неповторимый стиль</p>
+                <div class="breed-info">
+                    <!-- Большой блок "Внешность" -->
+                    <div class="info-block appearance-block">
+                        <h3>Внешность</h3>
+                        <p class="appearance-text">
+                            Уникально выделяется среди пород<br>
+                            с грушевидной головой, морщинистым лицом и ушами-раковинами.<br>
+                            Отличается сине-чёрным языком, крепким телосложением<br>
+                            и мускулистыми ногами. Шарпей украшают широкая грудь,<br>
+                            гибкая спина и кольцеобразный хвост, а его жесткая шерсть<br>
+                            подчеркивает неповторимый стиль
+                        </p>
+                    </div>
+
+                    <!-- Контейнер для маленьких блоков -->
+                    <div class="small-blocks-container">
+                        <!-- Первая строка блоков -->
+                        <div class="small-blocks-row">
+                            <!-- Блок "Характер и темперамент" -->
+                            <div class="info-block small-block character-block">
+                                <h3>Характер и темперамент</h3>
+                                <div class="paws-rating">
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon gray-paw"></div>
+                                </div>
+                                <p>Спокойный, идеальный компаньон, немного упрям</p>
+                            </div>
+
+                            <!-- Блок "Адаптивность" -->
+                            <div class="info-block small-block adaptability-block">
+                                <h3>Адаптивность</h3>
+                                <div class="paws-rating">
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon gray-paw"></div>
+                                    <div class="paw-icon gray-paw"></div>
+                                </div>
+                                <p>Адаптивны, требуют социализации и тренировки</p>
+                            </div>
+                        </div>
+
+                        <!-- Вторая строка блоков -->
+                        <div class="small-blocks-row">
+                            <!-- Блок "Потребность в уходе" -->
+                            <div class="info-block small-block care-block">
+                                <h3>Потребность в уходе</h3>
+                                <div class="paws-rating">
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon gray-paw"></div>
+                                    <div class="paw-icon gray-paw"></div>
+                                </div>
+                                <p>Требуют умеренного ухода за шерстью и кожей</p>
+                            </div>
+
+                            <!-- Блок "Активность" -->
+                            <div class="info-block small-block activity-block">
+                                <h3>Активность</h3>
+                                <div class="paws-rating">
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon green-paw"></div>
+                                    <div class="paw-icon gray-paw"></div>
+                                </div>
+                                <p>Умеренная активность, подходит для дома</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="info-block">
-                <h3>Характер и темперамент</h3>
-                <div class="paws">○○○○○</div>
-                <p>Спокойный, идеальный компаньон, немного упрям</p>
+            <!-- Кнопка "Подробнее" -->
+            <div class="more-btn-container">
+                <a href="#" class="breed-more-link">Подробнее</a>
             </div>
-
-            <div class="info-block">
-                <h3>Адаптивность</h3>
-                <div class="paws">○○○○○</div>
-                <p>Адаптивны, требуют социализации и тренировки</p>
-            </div>
-
-            <div class="info-block">
-                <h3>Потребность в уходе</h3>
-                <div class="paws">○○○○○</div>
-                <p>Требуют умеренного ухода за шерстью и кожей</p>
-            </div>
-
-            <div class="info-block">
-                <h3>Активность</h3>
-                <div class="paws">○○○○○</div>
-                <p>Умеренная активность, подходит для дома</p>
-            </div>
-
-            <a href="http://">Подробнее</a>
         </div>
     </div>
 </section>
