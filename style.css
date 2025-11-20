@@ -304,7 +304,7 @@ body {
     height: 7.4rem;
     border-radius: 1rem 1rem 0 0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
@@ -315,6 +315,7 @@ body {
     background-color: transparent;
     color: #396448;
     border: 0.1rem solid #396448;
+    white-space: nowrap;
 }
 
 .filter-btn.active {
@@ -325,9 +326,9 @@ body {
 }
 
 .filter-btn:nth-child(1) { width: 18.1rem; }
-.filter-btn:nth-child(2) { width: 13.9rem; }
+.filter-btn:nth-child(2) { width: 15rem; }
 .filter-btn:nth-child(3) { width: 12rem; }
-.filter-btn:nth-child(4) { width: 24.8rem; }
+.filter-btn:nth-child(4) { width: 28rem; }
 
 
 .puppies-section {
@@ -543,13 +544,15 @@ body {
     z-index: 3;
     position: relative;
 }
-/* ===== СЕКЦИЯ ВЫБОРА ПОРОД ===== */
+
 
 .breeds-choice-section {
     width: 100%;
+    min-height: 117.5rem;
     background-color: #F9F4F0;
     position: relative;
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 .breeds-choice-filter {
@@ -565,13 +568,15 @@ body {
     gap: 2.5rem;
     height: 7.4rem;
     align-items: center;
+    max-width: 134rem;
+    margin: 0 auto;
 }
 
 .choice-filter-btn {
     height: 7.4rem;
     border-radius: 1rem 1rem 0 0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
@@ -582,6 +587,7 @@ body {
     background-color: transparent;
     color: #AB8264;
     border: 0.1rem solid #AB8264;
+    white-space: nowrap;
 }
 
 .choice-filter-btn.active {
@@ -591,27 +597,31 @@ body {
 }
 
 .choice-filter-btn:nth-child(1) { width: 18.1rem; }
-.choice-filter-btn:nth-child(2) { width: 13.9rem; }
+.choice-filter-btn:nth-child(2) { width: 15rem; }
 .choice-filter-btn:nth-child(3) { width: 12rem; }
-.choice-filter-btn:nth-child(4) { width: 24.8rem; }
+.choice-filter-btn:nth-child(4) { width: 28rem; }
 
-/* Секция контента */
-.breeds-choice-content {
+
+
+.breeds-choice-content  {
     width: 100%;
+    min-height: 111rem;
     background-color: #AB8264;
     border-radius: 3rem;
     display: flex;
     justify-content: center;
-    padding: 5rem 0 8rem 0;
+    padding: 5rem 0;
+    box-sizing: border-box;
 }
 
-/* ===== КОНТЕНТ "О ПОРОДЕ" ===== */
+
 .breed-about-container {
-    max-width: 134rem;
-    width: 100%;
+    width: 134rem;
+    min-height: 95rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .breed-about-container h2 {
@@ -629,6 +639,8 @@ body {
     gap: 3rem;
     align-items: flex-start;
     margin-bottom: 3rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .breed-image {
@@ -638,25 +650,30 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 3rem;
+    flex-shrink: 0;
 }
 
-/* Блок с информацией */
+
 .breed-info {
     width: 65.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    height: 73.1rem;
+    position: relative;
+    flex-shrink: 0;
 }
 
-/* ===== БЛОК "ВНЕШНОСТЬ" - УМЕНЬШЕННЫЙ ===== */
+
 .appearance-block {
-    width: 100%;
-    height: 22rem; /* Уменьшили высоту */
+    width: 65.5rem;
+    height: 29rem;
     background: #EFE9E3;
     border-radius: 3rem;
-    padding: 2.5rem;
+    padding: 2rem 3rem 2.5rem 3rem;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 
 .appearance-block h3 {
@@ -664,50 +681,93 @@ body {
     font-size: 3.4rem;
     text-transform: uppercase;
     color: #000;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .appearance-text {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 140%;
     color: #000;
     margin: 0;
+    margin-top: 1.5rem;
 }
 
-/* ===== МАЛЕНЬКИЕ БЛОКИ - КОМПАКТНЫЕ ===== */
-.small-blocks-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
-    width: 100%;
-}
 
-.small-block {
+
+.character-block {
+    width: 31.3rem;
+    height: 19.4rem;
     background: #EFE9E3;
     border-radius: 3rem;
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 16rem; /* Компактная высота */
+    position: absolute;
+    top: 31rem;
+    left: 0;
+    box-sizing: border-box;
 }
+
+
+.adaptability-block {
+    width: 31.2rem;
+    height: 18.7rem;
+    background: #EFE9E3;
+    border-radius: 3rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 31rem;
+    right: 0;
+    box-sizing: border-box;
+}
+
+
+.care-block {
+    width: 31.3rem;
+    height: 18.7rem;
+    background: #EFE9E3;
+    border-radius: 3rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 52.4rem;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.activity-block {
+    width: 31.2rem;
+    height: 18.7rem;
+    background: #EFE9E3;
+    border-radius: 3rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 52.4rem;
+    right: 0;
+    box-sizing: border-box;
+}
+
 
 .small-block h3 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #000;
-    margin-bottom: 0.5rem; /* Уменьшили отступ */
+    margin-bottom: 1rem;
     white-space: nowrap;
 }
 
-/* Лапки ближе к заголовкам */
+
 .paws-rating {
     display: flex;
     gap: 0.5rem;
-    margin: 0.5rem 0 1rem 0; /* Лапки ближе к заголовку */
+    margin: 0.5rem 0 1.5rem 0;
     width: 15rem;
     height: 2rem;
 }
@@ -736,12 +796,14 @@ body {
     margin: 0;
 }
 
-/* ===== КНОПКА "ПОДРОБНЕЕ" ===== */
+
 .more-btn-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: auto;
 }
+
 .breed-more-link {
     width: 30rem;
     height: 8.2rem;
@@ -755,4 +817,132 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.faq-section {
+    width: 100%;
+    background-color: #F9F4F0;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0 6rem 0;
+}
+
+.faq-container {
+    width: 134.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.faq-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.faq-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 65.5rem;
+    margin-bottom: 4rem;
+    line-height: 140%;
+}
+
+
+.faq-items {
+    width: 133.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.faq-item {
+    background-color: transparent;
+    border-radius: 2rem; 
+    padding: 3rem;
+    border: 0.3rem solid #AB8264;
+}
+
+
+.faq-item.open {
+    background-color: #EFE9E3;
+    border: none; 
+}
+
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem; 
+    font-weight: bold;
+    margin: 0;
+    width: 73.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    white-space: nowrap; 
+}
+
+
+.faq-button {
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #396448;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9F4F0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.faq-cross {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: relative;
+}
+
+.faq-cross::before,
+.faq-cross::after {
+    content: '';
+    position: absolute;
+    background-color: #F9F4F0;
+    width: 100%;
+    height: 0.2rem;
+    top: 50%;
+    left: 0;
+}
+
+.faq-cross::before {
+    transform: rotate(45deg);
+}
+
+.faq-cross::after {
+    transform: rotate(-45deg);
+}
+
+
+.faq-answer {
+    margin-top: 2rem;
+}
+
+.faq-answer p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 140%;
+    margin: 0;
+    width: 84.3rem;
 }
