@@ -866,7 +866,7 @@ body {
     background-color: transparent;
     border-radius: 2rem; 
     padding: 3rem;
-    border: 0.3rem solid #AB8264;
+    border: 0.2rem solid #AB8264;
 }
 
 
@@ -945,4 +945,143 @@ body {
     line-height: 140%;
     margin: 0;
     width: 84.3rem;
+}
+
+.knowledge-base-section {
+    width: 100%;
+    background-color: #F9F4F0;
+    position: relative;
+    margin-top: 8rem; 
+    overflow: hidden;
+}
+
+
+.knowledge-filter {
+    width: 100%;
+    background-color: #F9F4F0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+}
+
+.knowledge-filter-buttons {
+    display: flex;
+    gap: 2.5rem;
+    height: 7.4rem;
+    align-items: center;
+    max-width: 134rem;
+    margin: 0 auto;
+}
+
+.knowledge-filter-btn {
+    height: 7.4rem;
+    border-radius: 1rem 1rem 0 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #396448; 
+    border: 0.1rem solid #396448; 
+    white-space: nowrap;
+    padding: 0 2rem;
+}
+
+.knowledge-filter-btn.active {
+    background-color: #396448; 
+    color: #F9F4F0; 
+    border: none;
+}
+
+
+.knowledge-content {
+    width: 100%;
+    min-height: 77.4rem; 
+    background-color: #396448;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    box-sizing: border-box;
+}
+
+.knowledge-container {
+    width: 134.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.knowledge-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.8rem;
+    color: #F9F4F0;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+.knowledge-cards {
+    width: 134.1rem;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.knowledge-card {
+    width: 42.7rem;
+    height: 37rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3rem; 
+}
+
+
+.knowledge-card:nth-child(1) .card-image {
+    background-image: url('photo/Card\ \(3\).jpg');
+    background-color: #EFE9E3; 
+}
+
+.knowledge-card:nth-child(2) .card-image {
+    background-image: url('photo/Card\ \(4\).jpg');
+    background-color: #EFE9E3; 
+}
+
+.knowledge-card:nth-child(3) .card-image {
+    background-image: url('photo/Card\ \(5\).jpg');
+    background-color: #EFE9E3; 
+}
+
+
+.more-knowledge {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.more-btn {
+    width: 30rem;
+    height: 8.2rem;
+    background-color: #F9F4F0;
+    color: #396448;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
