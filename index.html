@@ -393,104 +393,126 @@
 </section>
 
 <section class="help-section">
-    <h2>МЫ ВСЕГДА РАДЫ ПОМОЧЬ</h2>
-    <p>Если у вас есть вопросы или вы хотите получить дополнительную информацию, свяжитесь с нами через форму ниже</p>
-    
-    <div class="help-content">
+    <div class="help-container">
+        <h2 class="help-title">МЫ ВСЕГДА РАДЫ ПОМОЧЬ</h2>
+        <p class="help-subtitle">Если у вас есть вопросы или вы хотите получить дополнительную информацию, свяжитесь с нами через форму ниже</p>
         
-        <div class="form-column">
-            <form class="contact-form">
-                <input type="text" id="name" placeholder="Имя">
-                <input type="email" id="email" placeholder="Email">
-                <textarea id="message" placeholder="Сообщение"></textarea>
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
-        
-        <div class="image-column">
-            <img src="" alt="Фото помощи">
+        <div class="help-content">
+            <div class="form-column">
+                <div class="contact-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Как с вами связаться?">
+                        </div>
+                    </div>
+                    <div class="form-field message-field">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" placeholder="Ваш вопрос или комментарий"></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Отправить</button>
+                </div>
+            </div>
+            <div class="image-column">
+                <div class="help-image"></div>
+            </div>
         </div>
     </div>
 </section>
 
 <footer class="site-footer">
     <div class="footer-container">
-        
+
         <div class="footer-left">
-            <div class="contacts-section">
-                <h3>КОНТАКТЫ</h3>
-                <p>info@sharpet-club</p>
-                <p>7 (926) 232-43-07</p>
+            <div class="footer-logo"></div>
+            <div class="contacts-block">
+                <h3 class="contacts-title">КОНТАКТЫ</h3>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon email-icon"></div>
+                        <p class="contact-text">info@sharpet-club</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon phone-icon"></div>
+                        <p class="contact-text">7 (926) 232-43-07</p>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <div class="social-icon icon-1"></div>
+                    <div class="social-icon icon-2"></div>
+                    <div class="social-icon icon-3"></div>
+                    <div class="social-icon icon-4"></div>
+                </div>>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Договор оферты</a>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
             </div>
-            
-            <div class="legal-links">
-                <a href="#">Договор оферты</a>
-                <a href="#">Политика конфиденциальности</a>
-            </div>
-            
-            <div class="about-section">
-                <h4>О НАС</h4>
-                <ul>
+        </div>
+
+        <div class="footer-center">
+            <div class="footer-column about-column">
+                <h4 class="column-title">О НАС</h4>
+                <ul class="column-links">
                     <li><a href="#">Питомник</a></li>
                     <li><a href="#">Наша команда</a></li>
                     <li><a href="#">Выставки</a></li>
                     <li><a href="#">Новости</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="footer-right">
-            <div class="breeds-grid">
-                
-                <div class="breed-column">
-                    <h4>ШАРПЕЙ</h4>
-                    <ul>
-                        <li><a href="#">Щенки</a></li>
-                        <li><a href="#">Кобели</a></li>
-                        <li><a href="#">Суки</a></li>
-                        <li><a href="#">О породе</a></li>
-                        <li><a href="#">Наша память</a></li>
-                    </ul>
-                </div>
-
-                <div class="breed-column">
-                    <h4>СИБА-ИНУ</h4>
-                    <ul>
-                        <li><a href="#">Щенки</a></li>
-                        <li><a href="#">Кобели</a></li>
-                        <li><a href="#">Суки</a></li>
-                        <li><a href="#">О породе</a></li>
-                        <li><a href="#">Наша память</a></li>
-                    </ul>
-                </div>
-
-                <div class="breed-column">
-                    <h4>КОРГИ</h4>
-                    <ul>
-                        <li><a href="#">Щенки</a></li>
-                        <li><a href="#">Кобели</a></li>
-                        <li><a href="#">Суки</a></li>
-                        <li><a href="#">О породе</a></li>
-                        <li><a href="#">Наша память</a></li>
-                    </ul>
-                </div>
-
-                <div class="breed-column">
-                    <h4>ПОМЕРАНСКИЙ ШПИЦ</h4>
-                    <ul>
-                        <li><a href="#">Щенки</a></li>
-                        <li><a href="#">Кобели</a></li>
-                        <li><a href="#">Суки</a></li>
-                        <li><a href="#">О породе</a></li>
-                        <li><a href="#">Наша память</a></li>
-                    </ul>
-                </div>
+            
+            <div class="footer-column sharpei-column">
+                <h4 class="column-title">ШАРПЕЙ</h4>
+                <ul class="column-links">
+                    <li><a href="#">Щенки</a></li>
+                    <li><a href="#">Кобели</a></li>
+                    <li><a href="#">Суки</a></li>
+                    <li><a href="#">О породе</a></li>
+                    <li><a href="#">Наша память</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column shiba-column">
+                <h4 class="column-title">СИБА-ИНУ</h4>
+                <ul class="column-links">
+                    <li><a href="#">Щенки</a></li>
+                    <li><a href="#">Кобели</a></li>
+                    <li><a href="#">Суки</a></li>
+                    <li><a href="#">О породе</a></li>
+                    <li><a href="#">Наша память</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column corgi-column">
+                <h4 class="column-title">КОРГИ</h4>
+                <ul class="column-links">
+                    <li><a href="#">Щенки</a></li>
+                    <li><a href="#">Кобели</a></li>
+                    <li><a href="#">Суки</a></li>
+                    <li><a href="#">О породе</a></li>
+                    <li><a href="#">Наша память</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column spitz-column">
+                <h4 class="column-title">ПОМЕРАНСКИЙ ШПИЦ</h4>
+                <ul class="column-links">
+                    <li><a href="#">Щенки</a></li>
+                    <li><a href="#">Кобели</a></li>
+                    <li><a href="#">Суки</a></li>
+                    <li><a href="#">О породе</a></li>
+                    <li><a href="#">Наша память</a></li>
+                </ul>
             </div>
         </div>
     </div>
-</footer>
+ </footer>
 
-
-
-</body>
+ </body>
 </html>
