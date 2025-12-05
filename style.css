@@ -399,131 +399,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12rem 0;
+    padding: 12rem 0 10rem 0;
     margin-top: 0;
+    overflow: hidden;
 }
 
 .why-us-container {
-    max-width: 134.1rem;
-    width: 100%;
+    width: 134.1rem;
+    height: 78rem;
+    position: relative;
 }
 
 .why-us h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 6.6rem;
-    text-align: center;
-    margin-bottom: 2rem;
+    font-size: 6.6rem; 
     text-transform: uppercase;
-    margin-top: 10rem;
+    text-align: center;
+    margin: 0 auto 5rem;
+    width: 100%;
+    white-space: nowrap;
+    position: static;
 }
 
 .why-us-content {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    height: 71.7rem;
-}
-
-.advantages-grid {
-    width: 80rem;
-    height: 39rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 3rem;
-    z-index: 3;
-    position: absolute;
-    left: 0;
-    top: 13rem;
-}
-
-.advantage-item {
-    background-color: #EFE9E3;
-    border-radius: 3rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 38.5rem;
-    height: 16rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.advantage-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 100%;
     width: 100%;
-}
-
-.advantage-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    padding-right: 2rem;
-    padding-bottom: 1.5rem;
-}
-
-.advantage-text h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 1rem 0;
-    line-height: 1;
-    white-space: nowrap;
-}
-
-.advantage-text p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    line-height: 140%;
-    margin: 0;
-    color: #000;
-}
-
-.advantage-image {
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem;
-    flex-shrink: 0;
-    position: absolute;
-}
-
-.img-1 {
-    background-image: url('photo/Без\ названия5_20251113172814.png');
-    width: 17rem;
-    height: 17rem;
-    top: 1rem;
-    right: -4rem; 
-}
-
-.img-2 {
-    background-image: url('photo/Без\ названия8_20251113173151.png');
-    width: 16rem; 
-    height: 16rem;
-    top: 1rem;
-    right: -1rem; 
-}
-
-.img-3 {
-    background-image: url('photo/Без\ названия9_20251113173308.png');
-    width: 16rem; 
-    height: 16rem;
-    top: -1rem; 
-    right: -3.5rem; 
-}
-
-.img-4 {
-    background-image: url('photo/Без\ названия10_20251113173419.png');
-    width: 18rem; 
-    height: 18rem;
-    top: -2rem;
-    right: -2rem;
+    height: calc(100% - 10rem);
+    position: relative;
 }
 
 .why-us-image {
@@ -535,14 +436,180 @@ body {
     border-radius: 2.5rem;
     position: absolute;
     right: 0;
-    top: 5rem;
+    top: 3rem; 
     z-index: 1;
 }
 
-.advantage-item:nth-child(2),
-.advantage-item:nth-child(4) {
+.advantages-grid {
+    width: 88.4rem;
+    height: 43rem;
+    position: absolute;
+    left: 0;
+    top: 10rem; 
+    z-index: 2;
+}
+
+.advantage-item {
+    background-color: #EFE9E3;
+    border-radius: 3rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.advantage-item:nth-child(1) {
+    width: 42.7rem;
+    height: 20rem;
+    top: 0;
+    left: 0;
     z-index: 3;
+}
+
+.advantage-item:nth-child(2) {
+    width: 42.7rem;
+    height: 20rem;
+    top: 0;
+    left: 45.7rem;
+    z-index: 4;
+}
+
+.advantage-item:nth-child(3) {
+    width: 42.7rem;
+    height: 20rem;
+    top: 23rem;
+    left: 0;
+    z-index: 3;
+}
+
+.advantage-item:nth-child(4) {
+    width: 42.7rem;
+    height: 20rem;
+    top: 23rem;
+    left: 45.7rem;
+    z-index: 4;
+}
+
+.advantage-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.advantage-text { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding-bottom: 1.5rem;
+}
+
+.advantage-text h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem; 
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
+    line-height: 1;
+    color: #000;
+}
+
+.advantage-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 140%;
+    margin: 0;
+    color: #000;
+}
+
+.advantage-item:nth-child(1) .advantage-text h3 {
+    width: 26.9rem;
+}
+
+.advantage-item:nth-child(1) .advantage-text p {
+    width: 29rem;
+}
+
+.advantage-item:nth-child(2) .advantage-text h3 {
+    width: 26.9rem;
+}
+
+.advantage-item:nth-child(2) .advantage-text p {
+    width: 29rem;
+}
+
+.advantage-item:nth-child(3) .advantage-text h3 {
+    width: 31.3rem;
+}
+
+.advantage-item:nth-child(3) .advantage-text p {
+    width: 33.1rem;
+}
+
+.advantage-item:nth-child(4) .advantage-text h3 {
+    width: 26.9rem;
+}
+
+.advantage-item:nth-child(4) .advantage-text p {
+    width: 25.1rem;
+}
+
+.advantage-image {
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem; 
+    position: absolute;
+    z-index: 1;
+}
+
+.img-1 {
+    background-image: url('photo/Без\ названия5_20251113172814.png');
+    width: 15rem;
+    height: 15rem;
+    top: 1rem;
+    right: -4rem;
+    transform: rotate(-5deg);
+}
+
+.img-2 {
+    background-image: url('photo/Без\ названия8_20251113173151.png');
+    width: 14rem;
+    height: 14rem;
+    top: 1rem;
+    right: -1rem;
+    transform: rotate(3deg);
+}
+
+.img-3 {
+    background-image: url('photo/Без\ названия9_20251113173308.png');
+    width: 14rem;
+    height: 14rem;
+    top: -1rem;
+    right: -3.5rem;
+    transform: rotate(-7deg);
+}
+
+.img-4 {
+    background-image: url('photo/Без\ названия10_20251113173419.png');
+    width: 16rem;
+    height: 16rem;
+    top: -2rem;
+    right: -2rem;
+    transform: rotate(5deg);
+}
+
+
+.breeds-choice-section {
+    width: 100%;
+    min-height: 117.5rem;
+    background-color: #F9F4F0;
     position: relative;
+    margin-top: 0; 
+    overflow: hidden;
 }
 
 
